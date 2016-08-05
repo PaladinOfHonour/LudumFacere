@@ -1,0 +1,6 @@
+# still to be discussed
+
+Class + script: TestName
+Variable: testName
+GameObject: Test Name
+(Asset) file: Test Name
