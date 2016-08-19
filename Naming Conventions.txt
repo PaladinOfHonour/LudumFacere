@@ -1,6 +1,6 @@
 # still to be discussed
 
-Class + script: TestName
+Classes, scripts, enums, functions: TestName
 Variable: testName
 GameObject: Test Name
 (Asset) file: Test Name
