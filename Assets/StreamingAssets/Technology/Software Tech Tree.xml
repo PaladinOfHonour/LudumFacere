@@ -4,6 +4,7 @@
     <ItemEntry>
       <name>Software Tech 0</name>
       <description>Okay!</description>
+	  <price>0</price>
       <type>Software</type>
       <hasIntegratedGraphics>false</hasIntegratedGraphics>
       <bitCapacity>NA</bitCapacity>
@@ -14,6 +15,7 @@
     <ItemEntry>
       <name>Minesweeper</name>
       <description>#software</description>
+	  <price>0</price>
       <type>Software</type>
       <hasIntegratedGraphics>false</hasIntegratedGraphics>
       <bitCapacity>NA</bitCapacity>

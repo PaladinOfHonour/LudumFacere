@@ -41,7 +41,10 @@ public class ItemEntry
 {
     public string name;
     public string description;
+    public int price;
+    public string iconPath;
     public TechType type;
+    public string function;
     public bool hasIntegratedGraphics;
     public string bitCapacity;
     public List<string> parents;
@@ -64,6 +67,9 @@ public enum TechType
     SSD,
     Input,
     Monitor,
+    TapeDrive,
+    FloppyDrive,
+    DiskDrive,
     Technology,
     Software
 }
