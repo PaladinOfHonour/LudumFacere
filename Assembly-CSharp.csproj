@@ -50,8 +50,9 @@
      <Compile Include="Assets\Scripts\UI Manager.cs" />
      <Compile Include="Assets\Scripts\XMLManager.cs" />
      <None Include="Assets\StreamingAssets\Technology\Software Tech Tree.xml" />
-     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\StreamingAssets\Technology\Hardware Tech Tree.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\StreamingAssets\Technology\Hardware Tech Tree 1.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

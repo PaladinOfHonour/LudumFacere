@@ -2,52 +2,196 @@
 <ItemDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <list>
     <ItemEntry>
-      <name>Single core CPU</name>
-      <description>A wopping total of 1 cores!</description> 
-	  <price>1</price>
-	  <iconPath>test.png</iconPath>
-      <type>Processor</type>
+      <name>4-bit microprocessor</name>
+      <description>the first generation of processors is here!</description> 
+      <price>1</price>
+	  <type>Processor</type>
       <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
-      <bitCapacity>4 bit</bitCapacity>
+	  <bitCapacity>4 bit</bitCapacity>
       <parents>
         <string>Start</string>
       </parents>
     </ItemEntry>
     <ItemEntry>
-      <name>Cool Hard Drive</name>
-      <description>50 MB of cool storage capacity!</description>
-	  <price>1</price>
-	  <iconPath>test.png</iconPath>
-      <type>HardDrive</type>
+      <name>8-bit microprocessor</name>
+      <description>a massive total of 8-bits in processing power!</description>
+	  <price>2</price>
+      <type>Processor</type>
       <hasIntegratedGraphics>false</hasIntegratedGraphics>
-      <bitCapacity>50 MB</bitCapacity>
+      <bitCapacity>8 bit</bitCapacity>
       <parents>
-        <string>Single core CPU</string>
+        <string>4-bit microprocessor</string>
       </parents>
     </ItemEntry>
 	<ItemEntry>
-      <name>Weird Memory</name>
-      <description>So you can stream that hentai!</description>
-	  <price>1</price>
-	  <iconPath>test.png</iconPath>
-      <type>Memory</type>
-      <hasIntegratedGraphics>false</hasIntegratedGraphics>
-      <bitCapacity>128 kb</bitCapacity>
+      <name>compact cassette tape drive</name>
+      <description>comes with hours of loading times</description>
+	  <price>1</price> 
+      <type>TapeDrive</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>640 KB</bitCapacity>
       <parents>
-        <string>Single core CPU</string>
+        <string>4-bit microprocessor</string>
       </parents>
     </ItemEntry>
 	<ItemEntry>
-      <name>Uncensored Monitor</name>
-      <description>So you can watch that hentai!</description>
-	  <price>1</price>
-	  <iconPath>test.png</iconPath>
+      <name>1KB RAM</name>
+      <description>a whopping 1 KB of ram</description> 
+	  <price>2</price>
       <type>Memory</type>
-      <hasIntegratedGraphics>false</hasIntegratedGraphics>
-      <bitCapacity>128 kb</bitCapacity>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>1 KB</bitCapacity>
       <parents>
-        <string>Weird Memory</string>
-		<string>Cool Hard Drive</string>
+        <string>compact cassette tape drive</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>bigger capacity cassettes</name>
+      <description>finally, more data!</description>
+	  <price>3</price> 
+      <type>Technology</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>960 KB</bitCapacity>
+      <parents>
+        <string>compact cassette tape drive</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>faster cassettes</name>
+      <description>after all, more speed!</description> 
+	  <price>3</price>
+      <type>Technology</type>
+	  <function>CassetteSpeed 1</function>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>640KB</bitCapacity>
+      <parents>
+        <string>compact cassette tape drive</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>4KB RAM</name>
+      <description>4KB is the future!</description>
+	  <price>4</price> 
+      <type>Memory</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>4 KB</bitCapacity>
+      <parents>
+        <string>1KB RAM</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>16KB RAM</name>
+      <description>an unbelievable amount of ram</description>
+	  <price>8</price> 
+      <type>Memory</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>16 KB</bitCapacity>
+      <parents>
+        <string>4KB RAM</string>
+		<string>8-bit microprocessor</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>64KB RAM</name>
+      <description>64KB of ram might never get surpassed!</description>
+	  <price>12</price> 
+      <type>Memory</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>64 KB</bitCapacity>
+      <parents>
+        <string>16KB RAM</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>128KB RAM</name>
+      <description>never before seen amounts of ram!</description>
+	  <price>20</price> 
+      <type>Memory</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>128 KB</bitCapacity>
+      <parents>
+        <string>64KB RAM</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>even more capacity cassettes</name>
+      <description>that's a lot of data!</description>
+	  <price>7</price> 
+      <type>Technology</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>1 MB</bitCapacity>
+      <parents>
+        <string>bigger capacity cassettes</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>even faster cassettes</name>
+      <description>you can't keep up with this speed</description>
+	  <price>6</price> 
+      <type>Technology</type>
+	  <function>CassetteSpeed 2</function>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>640 KB</bitCapacity>
+      <parents>
+        <string>faster cassettes</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>8-inch floppy drive</name>
+      <description>this technology is faster and more reliable</description>
+	  <price>8</price> 
+      <type>FloppyDrive</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>960 KB</bitCapacity>
+      <parents>
+        <string>faster cassettes</string>
+		<string>bigger capacity cassettes</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>faster 8-inch floppies</name>
+      <description>faster = better</description>
+	  <price>12</price> 
+      <type>Technology</type>
+	  <function>FloppySpeed 1</function>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>960 KB</bitCapacity>
+      <parents>
+        <string>8-inch floppy drive</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>bigger capacity 8-inch floppies</name>
+      <description>more data = better</description>
+	  <price>14</price> 
+      <type>Technology</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>2 MB</bitCapacity>
+      <parents>
+        <string>8-inch floppy drive</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>5 1/4-inch floppy drive</name>
+      <description>smaller = better</description>
+	  <price>10</price> 
+      <type>FloppyDrive</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>640 KB</bitCapacity>
+      <parents>
+        <string>8-inch floppy drive</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>even faster 8-inch floppies</name>
+      <description>even faster = better</description>
+	  <price>16</price> 
+      <type>Technology</type>
+	  <function>FloppySpeed 2</function>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>960 KB</bitCapacity>
+      <parents>
+        <string>faster 8-inch floppies</string>
       </parents>
     </ItemEntry>
   </list>

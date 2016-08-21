@@ -51,7 +51,6 @@ public class TreeManager : MonoBehaviour {
                 // If the itemEntry has "Start" as a parent then the tree index will be 0
                 if (parent == "Start")
                 {
-                    Debug.Log("We made it!");
                     index = 0;
                     break;
                 }

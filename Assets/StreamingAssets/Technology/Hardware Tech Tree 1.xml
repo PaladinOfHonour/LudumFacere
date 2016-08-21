@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ItemDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <list>
+    <ItemEntry>
+      <name>Single core CPU</name>
+      <description>A wopping total of 1 cores!</description> 
+	  <price>1</price>
+	  <iconPath>test.png</iconPath>
+      <type>Processor</type>
+      <hasIntegratedGraphics>false</hasIntegratedGraphics> <!-- This variable only applies to Processors -->
+      <bitCapacity>4 bit</bitCapacity>
+      <parents>
+        <string>Start</string>
+      </parents>
+    </ItemEntry>
+    <ItemEntry>
+      <name>Cool Hard Drive</name>
+      <description>50 MB of cool storage capacity!</description>
+	  <price>1</price>
+	  <iconPath>test.png</iconPath>
+      <type>HardDrive</type>
+      <bitCapacity>50 MB</bitCapacity>
+      <parents>
+        <string>Single core CPU</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>Weird Memory</name>
+      <description>So you can stream that hentai!</description>
+	  <price>1</price>
+	  <iconPath>test.png</iconPath>
+      <type>Memory</type>
+      <bitCapacity>128 kb</bitCapacity>
+      <parents>
+        <string>Single core CPU</string>
+      </parents>
+    </ItemEntry>
+	<ItemEntry>
+      <name>Uncensored Monitor</name>
+      <description>So you can watch that hentai!</description>
+	  <price>1</price>
+	  <iconPath>test.png</iconPath>
+      <type>Memory</type>
+      <bitCapacity>128 kb</bitCapacity>
+      <parents>
+        <string>Weird Memory</string>
+		<string>Cool Hard Drive</string>
+      </parents>
+    </ItemEntry>
+  </list>
+</ItemDatabase>
